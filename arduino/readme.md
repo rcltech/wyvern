@@ -13,7 +13,7 @@ All of these were obtained at [WECL](https://www.google.com/maps/place/WECL/@22.
 
 ### To run
 Clone this repo, and cd into the `arduino` folder.
-```sh
+```
 git clone https://github.com/rcltech/wyvern.git
 cd wyvern/arduino
 ```
@@ -32,4 +32,4 @@ Pin for servo: `servoPin = 7`
 
 Pin for LED: `ledPin = 8`
 
-Pin for button: `buttonPin = 8`
+Pin for button: `buttonPin = 9`
