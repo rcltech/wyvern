@@ -25,6 +25,11 @@ arduino main/main.ino
 
 Connect your arduino to one of your USB ports, and upload the program. If you cannot make this work, refer to this [guide](https://www.arduino.cc/en/main/howto).
 
+### COnfigurations
+#### To change period of each cycle
+Change the value of `const int period` in terms of milliseconds.
+For example: `const int period = 1000 * 60 * 10` represents a cycle period of 10 minutes.
+
 ### Pin Specifications
 All pins used are digital. You are welcomed to change the pins to your preference.
 
