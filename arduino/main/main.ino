@@ -3,8 +3,8 @@
 Servo servo1;
 Servo servo2;  
 
-const int servo1Pin = 6;
-const int servo2Pin = 7;
+const int servo1Pin = 6; // left
+const int servo2Pin = 7; // right
 const int ledPin = 8; // SIG1
 const int buttonPin = 9; // SIG2
 
@@ -27,12 +27,12 @@ const int servoAngleForOff = 150;
 void moveServos(int startAngle, int endAngle) {
   if (endAngle > startAngle) {
     for (int i = startAngle + 1; i <= endAngle; i+=1) {
-      servo1.write(i);
+      servo1.write(180-i);
       servo2.write(i);
     }
   } else {
     for (int i = startAngle - 1; i >= endAngle; i-=1) {
-      servo1.write(i);
+      servo1.write(180-i);
       servo2.write(i);
     }
   }
